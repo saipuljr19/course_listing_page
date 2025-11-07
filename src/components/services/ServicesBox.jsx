@@ -33,9 +33,14 @@ const ServicesBox = () => {
         {courses.map(({ id, name, description, image, duration, rating, bgColor }) => (
           <div
             key={id}
-            className={`relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition duration-300 ${bgColor} text-white bg-[url('${image}')] bg-cover bg-center bg-blend-overlay`}
+            className={`relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition duration-300 bg-cover bg-center text-white`}
+            style={{ backgroundImage: `url(${image})` }}
           >
-            <div className="p-6 md:p-8 backdrop-blur-sm space-y-3 rounded-xl">
+            {/* Overlay hitam transparan */}
+            <div className="absolute inset-0 bg-black/40"></div>
+
+            {/* Konten */}
+            <div className="relative p-6 md:p-8 space-y-3 rounded-xl">
               <h2 className="text-2xl font-bold">{name}</h2>
               <p className="text-sm text-gray-200">{description}</p>
               <div className="flex justify-between items-center mt-4 text-sm font-medium">
