@@ -24,8 +24,8 @@ Dibuat menggunakan **React + Vite + Tailwind CSS**.
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/username/react-course-app.git
-cd react-course-app
+git clone https://github.com/saipuljr19/course_listing_page.git
+cd course_listing_page
 
 npm install
 npm run dev
