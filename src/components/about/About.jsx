@@ -5,40 +5,46 @@ const About = () => {
     <section id="about" className="bg-white dark:bg-slate-800 dark:text-white">
       <div className="container md:w-[70%] sm:py-16 py-10">
         <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
-          <div className=" font-bold relative">
-            <div className=" text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
+          {/* Judul besar transparan */}
+          <div className="font-bold relative">
+            <div className="text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
               ABOUT
             </div>
             <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl">
-              About me
+              Tentang Aplikasi
             </h1>
           </div>
-          <div className="text-slate-500">
+
+          {/* Isi teks */}
+          <div className="text-slate-500 dark:text-gray-300 leading-relaxed">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Deleniti, architecto ullam reprehenderit dolorem magnam quae
-              adipisci velit
+              Aplikasi ini dirancang sebagai platform pembelajaran online yang
+              interaktif dan mudah digunakan. Pengguna dapat memilih berbagai
+              kursus seperti <b>React Development</b>, <b>Data Science</b>,{" "}
+              <b>Cyber Security</b>, dan banyak lagi.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Deleniti, architecto ullam reprehenderit dolorem magnam quae
-              adipisci velit
+              Dengan sistem <b>enroll otomatis</b> dan tampilan yang responsif,
+              aplikasi ini memudahkan siapa pun untuk belajar dan mengembangkan
+              keterampilan digital secara mandiri. Semua data kursus dikelola
+              secara lokal untuk kecepatan dan efisiensi terbaik.
             </p>
-            <div className="">
+
+            {/* Tombol aksi */}
+            <div className="mt-6">
               <a
-                href="../../assets/Fake Resume.pdf"
-                className="primary-btn my-6 mr-6 inline-block"
-                download
+                href="#courses"
+                className="primary-btn my-6 mr-6 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition"
               >
-                Download Resume
+                Lihat Kursus
               </a>
               <a
-                href="tel:+123456789"
-                title="Call +123456789 "
-                className="outline-btn my-6"
+                href="mailto:support@learningapp.com"
+                title="Hubungi Kami"
+                className="outline-btn my-6 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-full font-semibold transition"
               >
-                Contact
+                Hubungi Kami
               </a>
             </div>
           </div>

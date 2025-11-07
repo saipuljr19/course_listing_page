@@ -6,11 +6,11 @@ const Services = () => {
     <section className="bg-secondary dark:bg-gray-900 dark:text-white py-10">
       <div className="container flex flex-col items-center">
         <h1 className="inline-block text-3xl text-center font-bold mb-3 border-b-2 border-primary pb-1">
-          Services
+          Course Listing
         </h1>
         <p className="text-slate-500 text-center md:w-[50%] mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit amet. Id,erroradipisicing elit. Id, error.
+          Jelajahi berbagai kursus menarik untuk meningkatkan keterampilanmu —
+          mulai dari pengembangan web, analisis data, hingga keamanan siber.
         </p>
       </div>
       <div>
